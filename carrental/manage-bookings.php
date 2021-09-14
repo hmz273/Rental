@@ -153,15 +153,15 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->ToDate);?></td>
 											<td><?php echo htmlentities($result->message);?></td>
 											<td><?php 
-if($result->Status==0)
-{
-echo htmlentities('Not Confirmed yet');
-} else if ($result->Status==1) {
-echo htmlentities('Confirmed');
-}
- else{
- 	echo htmlentities('Cancelled');
- }
+												if($result->Status==0)
+												{
+												echo htmlentities('Not Confirmed yet');
+												} else if ($result->Status==1) {
+												echo htmlentities('Confirmed');
+												}
+												else{
+													echo htmlentities('Cancelled');
+												}
 										?></td>
 											<td><?php echo htmlentities($result->PostingDate);?></td>
 										<td><a href="manage-bookings.php?aeid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to Confirm this booking')"> Confirm</a> /
