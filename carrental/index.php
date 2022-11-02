@@ -88,8 +88,10 @@ $cnt=1;
 if($query->rowCount() > 0)
 {
 foreach($results as $result)
-{  
-?>  
+{
+?>
+
+
 
 <div class="col-list-3">
 <div class="recent-car-list card" data-aos="zoom-in">
